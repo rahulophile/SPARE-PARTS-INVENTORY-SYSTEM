@@ -1,0 +1,70 @@
+# ################################################ #
+# .gitignore for MERN stack with frontend/backend  #
+# ################################################ #
+
+# Dependencies
+# ----------------
+# Ignore node_modules in the root, frontend, and backend folders
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+package-lock.json # If you use Yarn, you can ignore this and keep yarn.lock
+pnpm-lock.yaml # For pnpm users
+
+# Build files
+# ----------------
+# Ignore the production build folder for React/Vue/etc.
+frontend/build/
+# If you are using TypeScript on the backend, you might have a dist folder
+backend/dist/
+dist/
+build/
+
+
+# Environment Variables
+# ----------------
+# Never commit .env files! They contain sensitive keys.
+# Create a .env.example file instead to show what variables are needed.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+
+
+# Logs
+# ----------------
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# OS-generated files
+# ----------------
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+
+# IDE & Editor directories
+# ----------------
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+
+# Testing
+# ----------------
+coverage/
+.nyc_output
+
+
+# Miscellaneous
+# ----------------
+.pnp
+.pnp.js
