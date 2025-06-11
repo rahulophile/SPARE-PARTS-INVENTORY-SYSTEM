@@ -70,19 +70,19 @@ function App() {
   const lowStockCount = parts.filter(part => part.quantity < 5).length;
 
   return (
-    <div className="bg-gray-50 min-h-screen text-gray-800 font-sans overflow-x-hidden">
-      <header className="bg-white shadow-md">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl md:text-3xl font-bold text-blue-600">
-            🛠️ Spare Parts Inventory
-          </h1>
+    <div className=" flex justify-start items-center flex-col min-h-screen min-w-screen text-gray-800 font-sans overflow-x-hidden">
+      <header className="rounded-3xl mt-10 bg-gray-100 w-150 flex justify-center items-center  shadow-md">
+        <div className="container mx-auto px-4 py-4 flex justify-center items-center">
+          <h2 className=" text-center font-bold"> 
+            Spare Parts Inventory System
+          </h2>
         </div>
       </header>
 
       <main className="container mx-auto p-4 md:p-6">
         {/* Baaki ka UI code waisa hi rahega... */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-white p-6 rounded-xl shadow-lg flex items-center justify-between transition-transform duration-300 hover:scale-105">
+          <div className="bg-teal-100 p-6 rounded-xl shadow-lg flex items-center justify-between transition-transform duration-300 hover:scale-105">
             <div>
               <h3 className="text-lg font-semibold text-gray-500">Total Unique Parts</h3>
               <p className="text-5xl font-bold text-blue-600">{totalPartsCount}</p>
@@ -91,7 +91,7 @@ function App() {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
             </div>
           </div>
-          <div className="bg-white p-6 rounded-xl shadow-lg flex items-center justify-between transition-transform duration-300 hover:scale-105">
+          <div className="bg-teal-100 p-6 rounded-xl shadow-lg flex items-center justify-between transition-transform duration-300 hover:scale-105">
             <div>
               <h3 className="text-lg font-semibold text-gray-500">Low Stock (Under 5)</h3>
               <p className="text-5xl font-bold text-red-500">{lowStockCount}</p>
@@ -103,7 +103,7 @@ function App() {
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-lg mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-700">🧾 Add a New Part</h2>
+          <h2 className="text-2xl font-bold mb-4 text-gray-700">Add a New Part</h2>
           <form onSubmit={handleAddPart} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
             <div className="lg:col-span-1">
               <label htmlFor="partName" className="block text-sm font-medium text-gray-600 mb-1">Part Name</label>
@@ -129,7 +129,7 @@ function App() {
 
         <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
           <div className="flex flex-col md:flex-row justify-between md:items-center mb-4 gap-4">
-            <h2 className="text-2xl font-bold text-gray-700">📋 Inventory List</h2>
+            <h2 className="text-2xl font-bold text-gray-700">Inventory List</h2>
             <input
               type="text"
               placeholder="Search by Part or Machine..."
