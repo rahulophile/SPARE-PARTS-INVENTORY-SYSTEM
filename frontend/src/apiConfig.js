@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 // Backend ka base URL yahan define kar do
-const API_URL = 'http://localhost:8000/api';
+// const API_URL = 'http://localhost:8000/api';
+
+const API_URL = 'https://spare-parts-inventory-system.onrender.com/api';
 
 // Axios ka ek naya instance (copy) banate hain
 const api = axios.create({
