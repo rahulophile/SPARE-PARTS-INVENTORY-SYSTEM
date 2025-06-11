@@ -70,7 +70,7 @@ function App() {
   const lowStockCount = parts.filter(part => part.quantity < 5).length;
 
   return (
-    <div className=" flex justify-start items-center flex-col min-h-screen min-w-screen text-gray-800 font-sans overflow-x-hidden">
+    <div className="bg-blue-300 flex justify-start items-center flex-col min-h-screen min-w-screen text-gray-800 font-sans overflow-x-hidden">
       <header className="rounded-3xl mt-10 bg-gray-100 w-150 flex justify-center items-center  shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-center items-center">
           <h2 className=" text-center font-bold"> 
